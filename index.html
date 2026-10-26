@@ -6,6 +6,29 @@
   <meta name="theme-color" content="#b8d979">
   <title>HTML List and Table PETA 2.2</title>
   <link rel="stylesheet" href="index.css">
+  <style>
+.profile-list {
+  margin: 0.65rem 0 0;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.profile-list--unordered {
+  list-style-type: disc;
+}
+
+.profile-list--ordered {
+  list-style-type: decimal;
+}
+
+.profile-list li {
+  padding-left: 0.25rem;
+}
+
+.profile-list li::marker {
+  color: #78984d;
+}
+  </style>
 </head>
 <body>
   <main class="game-shell">
@@ -71,7 +94,7 @@
         
       <section class="info-section" id="hobbies">
           <h2><span class="section-icon">✎</span>1. My hobbies</h2>
-          <ol class="profile-list profile-list--unordered">
+          <ol class="profile-list profile-list--ordered">
             <li>Crocheting</li>
             <li>Playing online games</li>
             <li>Watching anime</li>
@@ -80,7 +103,7 @@
         
       <section class="info-section" id="favorites">
         <h2><span class="section-icon">♥</span>2. My favorites</h2>
-        <ul class="profile-list profile-list--ordered">
+        <ul class="profile-list profile-list--unordered">
           <li>Caldereta</li>
           <li>Pink</li>
           <li>Niki songs</li>
@@ -151,7 +174,7 @@
         <button class="small-button" id="hello-button">Say hello!</button>
       </section>
       
-      <footer><span>MADE BY Vinice</span><span>✿ HAVE A NICE DAY ✿</span></footer>
+      <footer><span>MADE BY Vinice</span><span>✿ PETA #2.2 ✿</span></footer>
       
     </section>
   </main>
